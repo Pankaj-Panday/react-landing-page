@@ -1,0 +1,14 @@
+:root {
+	/* background-colors */
+	--clr-primary: #4caf4f;
+
+	/* text-colors */
+	--clr-btn-text: #fff;
+
+	/* font-weight */
+	--fw-reg: 400;
+	--fw-med: 500;
+	--fw-smb: 600;
+
+	/* font-size */
+}
