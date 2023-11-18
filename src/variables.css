@@ -1,9 +1,18 @@
 :root {
 	/* background-colors */
 	--clr-primary: #4caf4f;
+	--clr-primary-dark: #388e3b;
+	--clr-primary-light: #e8f5e9;
+	--clr-neutral: #f5f7fa;
+	--clr-outline-primary: #4d4d4d;
+	--clr-outline-secondary: #89939e;
+	--clr-grey: #717171;
 
 	/* text-colors */
-	--clr-btn-text: #fff;
+	--clr-pm-text: var(--clr-outline-primary);
+	--clr-nav-text: #18191f;
+	--clr-pm-btn-txt: #fff;
+	--clr-sd-btn-txt: var(--clr-primary);
 
 	/* font-weight */
 	--fw-reg: 400;
@@ -11,4 +20,8 @@
 	--fw-smb: 600;
 
 	/* font-size */
+	--fs-headline-lg: 64px;
+	--fs-headline-md: 36px;
+	--fs-headline-nr: 28px;
+	--fs-headline-sm: 20px;
 }

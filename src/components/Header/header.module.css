@@ -1,3 +1,7 @@
+.header {
+	background-color: var(--clr-neutral);
+}
+
 .navbar {
 	justify-content: center;
 	align-items: center;
@@ -11,19 +15,21 @@
 	gap: 50px;
 }
 
-.loginBtn {
-	cursor: pointer;
-	background-color: transparent;
-	border: none;
-	font-size: 14px;
-	color: var(--clr-primary);
-	font-weight: var(--fw-med);
+.navLink::before {
+	content: "";
+	background-color: var(--clr-primary);
+	position: absolute;
+	bottom: -5px;
+	height: 1px;
+	border-radius: 0.5px;
+	width: 100%;
+	transform: scaleY(0);
+	display: block;
+	transition: transform 100ms ease-in;
 }
 
-.signUpBtn {
-	margin-left: 14px;
-	font-size: 14px;
-	font-weight: var(--fw-med);
-	min-width: 92px;
-	border-radius: 6px;
+.navLink:hover::before,
+.navLink:active::before,
+.navLink.active::before {
+	transform: scaleY(1);
 }

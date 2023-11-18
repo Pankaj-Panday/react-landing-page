@@ -1,0 +1,32 @@
+.btnPrimary,
+.btnSecondary {
+	font-weight: var(--fw-med);
+	cursor: pointer;
+	border: none;
+	transition: background-color 100ms ease-in;
+}
+
+.btnPrimary:focus-visible,
+.btnSecondary:focus-visible {
+	outline: 2px solid var(--clr-outline-primary);
+}
+
+.btnPrimary {
+	color: var(--clr-pm-btn-txt);
+	background-color: var(--clr-primary);
+}
+
+.btnPrimary:hover,
+.btnPrimary:active {
+	background-color: var(--clr-primary-dark);
+}
+
+.btnSecondary {
+	color: var(--clr-sd-btn-txt);
+	background-color: transparent;
+}
+
+.btnSecondary:hover,
+.btnSecondary:active {
+	background-color: var(--clr-primary-light);
+}
