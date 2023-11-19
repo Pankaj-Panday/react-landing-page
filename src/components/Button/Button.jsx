@@ -14,7 +14,6 @@ export default function Button({ children, style, type, onClick }) {
 		default:
 			className = null;
 	}
-	console.log(className);
 	return (
 		<button className={className} style={style} onClick={onClick}>
 			{children}

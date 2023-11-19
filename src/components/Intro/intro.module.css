@@ -1,0 +1,32 @@
+.intro {
+	background-color: var(--clr-neutral);
+	height: 599px;
+}
+
+.intro > div {
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 104px;
+}
+
+.intro img {
+	max-height: 407px;
+}
+
+.intro h1 {
+	font-size: var(--fs-headline-lg);
+	color: var(--clr-pm-text);
+	line-height: 76px;
+	margin-bottom: 16px;
+}
+
+.intro h1 > span {
+	color: var(--clr-primary);
+}
+
+.intro p {
+	line-height: 24px;
+	margin-bottom: 32px;
+	color: var(--clr-grey);
+}
