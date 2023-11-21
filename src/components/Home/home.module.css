@@ -1,5 +1,5 @@
 .intro {
-	background-color: var(--clr-neutral);
+	background-color: var(--clr-neutral-silver);
 	height: 599px;
 }
 
@@ -15,9 +15,9 @@
 }
 
 .intro h1 {
-	font-size: var(--fs-headline-lg);
-	color: var(--clr-pm-text);
-	line-height: 76px;
+	font-size: var(--fs-heading-lg);
+	color: var(--clr-neutral-d-grey);
+	line-height: 7.6rem;
 	margin-bottom: 16px;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .intro p {
-	line-height: 24px;
+	line-height: 2.4rem;
 	margin-bottom: 32px;
-	color: var(--clr-grey);
+	font-size: var(--fs-body-md);
+	color: var(--clr-neutral-grey);
 }

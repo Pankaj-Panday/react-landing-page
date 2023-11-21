@@ -7,7 +7,7 @@ export default function Header() {
 		<header className={`${styles.header}`}>
 			<nav className={`flex ${styles.navbar}`}>
 				<a className={`left`} href="#">
-					<img src="/images/Logo.png" alt="Brand-Logo" />
+					<img src="/images/Logo.svg" alt="Brand-Logo" />
 				</a>
 				<ul className={`flex ${styles.navList}`}>
 					<li>

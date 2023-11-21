@@ -1,5 +1,5 @@
 .header {
-	background-color: var(--clr-neutral);
+	background-color: var(--clr-neutral-silver);
 }
 
 .navbar {
@@ -13,6 +13,10 @@
 
 .navList {
 	gap: 50px;
+}
+
+.navLink {
+	font-size: var(--fs-body-md);
 }
 
 .navLink::before {
