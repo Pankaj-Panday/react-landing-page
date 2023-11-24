@@ -1,0 +1,134 @@
+.achievements h2 {
+	font-size: var(--fs-heading-md);
+	color: var(--clr-neutral-d-grey);
+	font-weight: var(--fw-semi-bold);
+	line-height: 4.4rem;
+}
+
+.achievements {
+	background-color: var(--clr-neutral-silver);
+	padding: 64px 0;
+	margin-bottom: 48px;
+}
+
+.achievements > div {
+	justify-content: space-between;
+	gap: 72px;
+}
+
+.achievements > div > div {
+	width: 50%;
+}
+
+.achievements h2 span {
+	color: var(--clr-primary);
+}
+
+.achievements p {
+	margin-top: 8px;
+	font-size: var(--fs-body-md);
+	color: var(--clr-neutral-d-grey);
+	font-weight: var(--fw-regular);
+	line-height: 2.4rem;
+}
+
+.achievements .counterContainer {
+	flex-direction: column;
+	gap: 40px;
+}
+
+.counterContainer > div {
+	gap: 30px;
+}
+
+.counterContainer .achievement {
+	width: 50%;
+}
+
+.testimonials {
+	padding: 32px 0;
+	margin-bottom: 48px;
+	background-color: var(--clr-neutral-silver);
+}
+
+.testimonials > div {
+	gap: 78px;
+	justify-content: space-between;
+}
+
+.testimonials > div > img {
+	border-radius: 8px;
+	object-fit: cover;
+	box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+}
+
+.testimonials .testimonialText,
+.testimonials .designation {
+	font-size: var(--fs-body-md);
+	font-weight: var(--fw-regular);
+	line-height: 2.4rem;
+	margin-bottom: 16px;
+}
+
+.testimonials .testimonialText {
+	color: var(--clr-neutral-grey);
+}
+
+.testimonials .author {
+	font-size: var(--fs-heading-xs);
+	color: var(--clr-primary);
+	font-weight: var(--fw-semi-bold);
+	line-height: 2.8rem;
+	margin-bottom: 8px;
+}
+
+.testimonials .designation {
+	color: var(--clr-neutral-l-grey);
+}
+
+.testimonials .clientLogos {
+	justify-content: space-between;
+	margin-top: 32px;
+	height: 44px;
+	align-items: center;
+}
+
+.testimonials .clientLogos a {
+	font-size: var(--fs-heading-xs);
+	color: var(--clr-primary);
+	font-weight: var(--fw-semi-bold);
+	line-height: 2.8rem;
+}
+
+.arrowIcon {
+	width: 24px;
+	height: 24px;
+	background-image: url("images/rightArrow.svg");
+	display: inline-block;
+	transform: translateY(25%);
+}
+
+.communityUpdates h2 {
+	font-size: var(--fs-heading-md);
+	color: var(--clr-neutral-d-grey);
+	font-weight: var(--fw-semi-bold);
+	line-height: 4.4rem;
+}
+
+.communityUpdates h2,
+.communityUpdates p {
+	text-align: center;
+}
+
+.communityUpdates p {
+	font-size: var(--fs-body-md);
+	color: var(--clr-neutral-grey);
+	font-weight: var(--fw-regular);
+	line-height: 2.4rem;
+	margin: 8px auto 16px;
+	width: 55%;
+}
+
+.communityUpdates > div > div {
+	justify-content: space-between;
+}

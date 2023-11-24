@@ -1,6 +1,7 @@
 .intro {
 	background-color: var(--clr-neutral-silver);
 	height: 599px;
+	margin-bottom: 40px;
 }
 
 .intro > div {
@@ -30,4 +31,57 @@
 	margin-bottom: 32px;
 	font-size: var(--fs-body-md);
 	color: var(--clr-neutral-grey);
+}
+
+.clients,
+.community {
+	margin-bottom: 40px;
+}
+
+.clients h2,
+.community h2 {
+	text-align: center;
+	font-size: var(--fs-heading-md);
+	font-weight: var(--fw-semi-bold);
+	color: var(--clr-neutral-d-grey);
+	line-height: 4.4rem;
+}
+
+.clients p,
+.community p {
+	text-align: center;
+	font-size: var(--fs-body-md);
+	font-weight: var(--fw-regular);
+	color: var(--clr-neutral-grey);
+	margin-top: 8px;
+	line-height: 2.4rem;
+}
+
+.clients .clientLogos {
+	margin-top: 16px;
+	padding: 25px 0;
+	justify-content: space-between;
+}
+
+.community .details {
+	margin-top: 16px;
+	padding: 10px 0;
+	justify-content: space-between;
+	gap: 127px;
+}
+
+.community .details div {
+	text-align: center;
+	padding: 24px 32px;
+}
+
+.community .details h3 {
+	font-size: var(--fs-heading-sm);
+	font-weight: var(--fw-semi-bold);
+	color: var(--clr-neutral-d-grey);
+	margin-top: 16px;
+}
+
+.community .details p {
+	font-size: var(--fs-body-sm);
 }

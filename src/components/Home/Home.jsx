@@ -35,21 +35,26 @@ export default function Home() {
 				<div className="container">
 					<h2>Our Clients</h2>
 					<p>We have been working with some Fortune 500+ clients</p>
-					<div>
+					<div className={`${styles.clientLogos} flex`}>
 						<img src="images/clientLogo-1.svg" alt="Logo 1" />
 						<img src="images/clientLogo-2.svg" alt="Logo 2" />
 						<img src="images/clientLogo-3.svg" alt="Logo 3" />
 						<img src="images/clientLogo-4.svg" alt="Logo 4" />
 						<img src="images/clientLogo-5.svg" alt="Logo 5" />
 						<img src="images/clientLogo-6.svg" alt="Logo 6" />
+						<img src="images/clientLogo-3.svg" alt="Logo 7" />
 					</div>
 				</div>
 			</section>
 			<section className={`${styles.community}`}>
 				<div className="container">
-					<h2>Manage your entire community in a single system</h2>
+					<h2>
+						Manage your entire community
+						<br />
+						in a single system
+					</h2>
 					<p>Who is Nextcent suitable for?</p>
-					<section>
+					<section className={`${styles.details} flex`}>
 						<div>
 							<img src="images/communityIcon-1.svg" alt="" />
 							<h3>Membership Organisations</h3>
