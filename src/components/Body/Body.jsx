@@ -201,7 +201,7 @@ function UpdateCard({ heading, imgUrl }) {
 					borderRadius: "8px",
 					padding: "16px",
 					width: "86%",
-					margin: "-25% auto",
+					margin: "-25% auto 0",
 				}}
 			>
 				<h4

@@ -1,0 +1,122 @@
+.demo {
+	background-color: var(--clr-neutral-silver);
+	padding: 32px 0;
+	margin-top: 95px;
+}
+
+.demo h2 {
+	font-size: var(--fs-heading-lg);
+	font-weight: var(--fw-semi-bold);
+	color: var(--clr-neutral-d-grey);
+	line-height: 7.6rem;
+	text-align: center;
+	width: 76%;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.footer {
+	background-color: var(--clr-neutral-black);
+	padding: 64px 0;
+}
+
+.footer > div {
+	justify-content: space-between;
+}
+
+.footer .companyInfo .brandLogo {
+	width: 191px;
+	height: 29px;
+	display: inline-block;
+	font-size: var(--fs-body-md);
+	color: var(--clr-neutral-white);
+	object-fit: contain;
+	margin-bottom: 40px;
+}
+
+.footer .companyInfo p {
+	font-size: var(--fs-body-sm);
+	color: var(--clr-neutral-silver);
+	font-weight: var(--fw-regular);
+	line-height: 2rem;
+	margin-bottom: 8px;
+}
+
+.footer .socials {
+	margin-top: 40px;
+	gap: 16px;
+}
+
+.footer .socials a {
+	justify-content: center;
+	align-items: center;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: var(--clr-neutral-d-grey);
+}
+
+.footer .socials a img {
+	vertical-align: middle;
+}
+
+.footer .links {
+	width: 55%;
+	justify-content: space-between;
+}
+
+.footer .links h4 {
+	font-size: var(--fs-heading-xs);
+	color: var(--clr-neutral-white);
+	font-weight: var(--fw-semi-bold);
+	line-height: 2.8rem;
+	margin-bottom: 24px;
+}
+
+.footer .links li {
+	font-size: var(--fs-body-sm);
+	color: var(--clr-neutral-silver);
+	font-weight: var(--fw-regular);
+	line-height: 2rem;
+	margin-bottom: 12px;
+}
+
+.footer .form {
+	position: relative;
+}
+
+.footer .form input {
+	border-radius: 8px;
+	background-color: var(--clr-neutral-d-grey);
+	padding: 11px 12px;
+	min-height: 40px;
+	border: none;
+	width: 255px;
+	color: var(--clr-neutral-silver);
+}
+
+.footer .form input:focus-visible {
+	outline: 1px solid var(--clr-neutral-white);
+}
+
+.footer .form input::placeholder {
+	font-size: var(--fs-body-sm);
+	color: var(--clr-neutral-silver);
+	font-weight: var(--fw-regular);
+	line-height: 2rem;
+}
+
+.footer .form button {
+	position: absolute;
+	padding: 11px 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.footer .form button > img {
+	vertical-align: middle;
+}
