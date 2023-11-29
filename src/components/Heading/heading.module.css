@@ -1,0 +1,26 @@
+.h1,
+.h2,
+.h3,
+.h4 {
+	font-weight: var(--fw-semi-bold);
+}
+
+.h1 {
+	font-size: var(--fs-heading-lg);
+	line-height: 7.6rem;
+}
+
+.h2 {
+	font-size: var(--fs-heading-md);
+	line-height: 4.4rem;
+}
+
+.h3 {
+	font-size: var(--fs-heading-sm);
+	line-height: 3.6rem;
+}
+
+.h4 {
+	font-size: var(--fs-heading-xs);
+	line-height: 2.8rem;
+}

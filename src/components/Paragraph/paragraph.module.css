@@ -1,0 +1,38 @@
+.xs,
+.sm,
+.md,
+.lg {
+	color: var(--clr-neutral-grey);
+}
+
+.xs {
+	font-size: var(--fs-body-xs);
+	line-height: 1.6rem;
+}
+
+.sm {
+	font-size: var(--fs-body-sm);
+	line-height: 2rem;
+}
+
+.md {
+	font-size: var(--fs-body-md);
+	line-height: 2.4rem;
+}
+
+.lg {
+	font-size: var(--fs-body-lg);
+	line-height: 2.8rem;
+}
+
+.bold {
+	font-weight: var(--fw-medium);
+}
+
+.lightGreyTextColor {
+	color: var(--clr-neutral-l-grey);
+}
+
+.silverTextColor {
+	color: var(--clr-neutral-silver);
+}

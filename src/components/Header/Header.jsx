@@ -1,69 +1,68 @@
 import React from "react";
-import styles from "./header.module.css";
+import Link from "../Link/Link";
 import Button from "../Button/Button";
+import styles from "./header.module.css";
+import Logo from "../Logo/Logo";
 
 export default function Header() {
 	return (
 		<header className={`${styles.header}`}>
 			<nav className={`flex ${styles.navbar}`}>
-				<a className={`left`} href="#">
-					<img src="/images/Logo.svg" alt="Brand-Logo" />
-				</a>
+				<Link className={`left`} to="#">
+					<Logo theme="dark" style={{ width: "151px", height: "24px" }} />
+				</Link>
 				<ul className={`flex ${styles.navList}`}>
 					<li>
-						<a href="#" className={`active ${styles.navLink}`}>
+						<Link to="#" navlink black active medium>
 							Home
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className={`${styles.navLink}`}>
+						<Link to="#" navlink black medium>
 							Service
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className={`${styles.navLink}`}>
+						<Link to="#" navlink black medium>
 							Feature
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className={`${styles.navLink}`}>
+						<Link to="#" navlink black medium>
 							Product
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className={`${styles.navLink}`}>
+						<Link to="#" navlink black medium>
 							Testimonial
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#" className={`${styles.navLink}`}>
+						<Link to="#" navlink black medium>
 							FAQ
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<Button
+					small
+					type="secondary"
 					style={{
-						fontSize: "14px",
-						minWidth: "93px",
-						borderRadius: "6px",
-						padding: "10px 20px",
 						marginLeft: "auto",
 					}}
-					type="secondary"
-					onClick={() => {}} // no functionality for button
+					onClick={() => {
+						alert("you pressed Login button");
+					}} // no functionality for button
 				>
 					Login
 				</Button>
 				<Button
+					small
 					style={{
-						fontSize: "14px",
-						minWidth: "93px",
-						borderRadius: "6px",
-						padding: "10px 20px",
 						marginLeft: "14px",
 					}}
-					type="primary"
-					onClick={() => {}} // no functionality for button
+					onClick={() => {
+						alert("you pressed signup button");
+					}} // no functionality for button
 				>
 					Sign Up
 				</Button>

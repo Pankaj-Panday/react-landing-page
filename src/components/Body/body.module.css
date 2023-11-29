@@ -1,8 +1,5 @@
-.achievements h2 {
-	font-size: var(--fs-heading-md);
+.achievements .h2 {
 	color: var(--clr-neutral-d-grey);
-	font-weight: var(--fw-semi-bold);
-	line-height: 4.4rem;
 }
 
 .achievements {
@@ -20,16 +17,13 @@
 	width: 50%;
 }
 
-.achievements h2 span {
+.achievements .primaryColorText {
 	color: var(--clr-primary);
 }
 
-.achievements p {
+.achievements .p {
 	margin-top: 8px;
-	font-size: var(--fs-body-md);
 	color: var(--clr-neutral-d-grey);
-	font-weight: var(--fw-regular);
-	line-height: 2.4rem;
 }
 
 .achievements .counterContainer {
@@ -62,28 +56,24 @@
 	box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
 }
 
-.testimonials .testimonialText,
-.testimonials .designation {
-	font-size: var(--fs-body-md);
-	font-weight: var(--fw-regular);
-	line-height: 2.4rem;
+.testimonials .testimonialText {
 	margin-bottom: 16px;
 }
 
 .testimonials .testimonialText {
+	font-size: var(--fs-body-md);
+	font-weight: var(--fw-regular);
+	line-height: 2.4rem;
 	color: var(--clr-neutral-grey);
 }
 
 .testimonials .author {
-	font-size: var(--fs-heading-xs);
 	color: var(--clr-primary);
-	font-weight: var(--fw-semi-bold);
-	line-height: 2.8rem;
 	margin-bottom: 8px;
 }
 
 .testimonials .designation {
-	color: var(--clr-neutral-l-grey);
+	margin-bottom: 32px;
 }
 
 .testimonials .clientLogos {
@@ -91,13 +81,6 @@
 	margin-top: 32px;
 	height: 44px;
 	align-items: center;
-}
-
-.testimonials .clientLogos a {
-	font-size: var(--fs-heading-xs);
-	color: var(--clr-primary);
-	font-weight: var(--fw-semi-bold);
-	line-height: 2.8rem;
 }
 
 .arrowIcon {
@@ -108,23 +91,16 @@
 	transform: translateY(25%);
 }
 
-.communityUpdates h2 {
-	font-size: var(--fs-heading-md);
+.communityUpdates .h2 {
 	color: var(--clr-neutral-d-grey);
-	font-weight: var(--fw-semi-bold);
-	line-height: 4.4rem;
 }
 
-.communityUpdates h2,
-.communityUpdates p {
+.communityUpdates .h2,
+.communityUpdates .p {
 	text-align: center;
 }
 
-.communityUpdates p {
-	font-size: var(--fs-body-md);
-	color: var(--clr-neutral-grey);
-	font-weight: var(--fw-regular);
-	line-height: 2.4rem;
+.communityUpdates .p {
 	margin: 8px auto 16px;
 	width: 55%;
 }

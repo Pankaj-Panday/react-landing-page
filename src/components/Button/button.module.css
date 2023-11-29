@@ -30,3 +30,25 @@
 .btnSecondary:active {
 	background-color: var(--clr-primary-t5);
 }
+
+.small {
+	font-size: 14px;
+	min-width: 93px;
+	border-radius: 6px;
+	padding: 10px 20px;
+}
+
+.medium,
+.large {
+	font-size: 16px;
+	border-radius: 4px;
+	padding: 14px 32px;
+}
+
+.medium {
+	min-width: 128px;
+}
+
+.large {
+	min-width: 151px;
+}

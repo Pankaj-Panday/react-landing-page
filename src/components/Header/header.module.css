@@ -12,28 +12,6 @@
 }
 
 .navList {
-	gap: 50px;
-}
-
-.navLink {
-	font-size: var(--fs-body-md);
-}
-
-.navLink::before {
-	content: "";
-	background-color: var(--clr-primary);
-	position: absolute;
-	bottom: -5px;
-	height: 1px;
-	border-radius: 0.5px;
-	width: 100%;
-	transform: scaleY(0);
-	display: block;
-	transition: transform 100ms ease-in;
-}
-
-.navLink:hover::before,
-.navLink:active::before,
-.navLink.active::before {
-	transform: scaleY(1);
+	width: 47%;
+	justify-content: space-between;
 }

@@ -1,19 +1,22 @@
 import React from "react";
 import Button from "../Button/Button";
+import Link from "../Link/Link";
+import Logo from "../Logo/Logo";
 import styles from "./footer.module.css";
+import Heading from "../Heading/Heading";
+import Paragraph from "../Paragraph/Paragraph";
 
 export default function Footer() {
 	return (
 		<>
 			<section className={`${styles.demo}`}>
 				<div className="container">
-					<h2>Pellentesque suscipit fringilla libero eu.</h2>
+					<Heading level={2} className={styles.h2}>
+						Pellentesque suscipit fringilla libero eu.
+					</Heading>
 					<Button
-						type="primary"
+						large
 						style={{
-							padding: "14px 32px",
-							minWidth: "151px",
-							borderRadius: "4px",
 							margin: "0 auto",
 							display: "block",
 						}}
@@ -25,73 +28,99 @@ export default function Footer() {
 			<section className={`${styles.footer}`}>
 				<div className="container flex">
 					<div className={`${styles.companyInfo}`}>
-						<a href="#">
-							<img
-								src="images/Logo2.svg"
-								alt="brand logo"
-								className={`${styles.brandLogo}`}
-							/>
-						</a>
-						<p>Copyright © {new Date().getFullYear()} Nexcent ltd.</p>
-						<p>All rights reserved</p>
+						<Link to="#">
+							<Logo className={`${styles.brandLogo}`} />
+						</Link>
+						<Paragraph sm silver className={styles.p}>
+							Copyright © {new Date().getFullYear()} Nexcent ltd.
+						</Paragraph>
+						<Paragraph sm silver className={styles.p}>
+							All rights reserved
+						</Paragraph>
 						<section className={`${styles.socials} flex`}>
-							<a href="" className="flex">
+							<Link to="#" className="flex">
 								<img src="images/instaLogo.svg" alt="Instagram" />
-							</a>
-							<a href="" className="flex">
+							</Link>
+							<Link to="#" className="flex">
 								<img src="images/socialLogo.svg" alt="Social" />
-							</a>
-							<a href="" className="flex">
+							</Link>
+							<Link to="#" className="flex">
 								<img src="images/twitterLogo.svg" alt="Twitter" />
-							</a>
-							<a href="" className="flex">
+							</Link>
+							<Link to="#" className="flex">
 								<img src="images/youtubeLogo.svg" alt="Youtube" />
-							</a>
+							</Link>
 						</section>
 					</div>
 					<div className={`${styles.links} flex`}>
 						<section>
-							<h4>Company</h4>
+							<Heading level={4} className={styles.h4}>
+								Company
+							</Heading>
 							<ul>
 								<li>
-									<a href="#">About us</a>
+									<Link small silver to="#">
+										About us
+									</Link>
 								</li>
 								<li>
-									<a href="#">Blog</a>
+									<Link small silver to="#">
+										Blog
+									</Link>
 								</li>
 								<li>
-									<a href="#">Contact us</a>
+									<Link small silver to="#">
+										Contact us
+									</Link>
 								</li>
 								<li>
-									<a href="#">Pricing</a>
+									<Link small silver to="#">
+										Pricing
+									</Link>
 								</li>
 								<li>
-									<a href="#">Testimonials</a>
+									<Link small silver to="#">
+										Testimonials
+									</Link>
 								</li>
 							</ul>
 						</section>
 						<section>
-							<h4>Support</h4>
+							<Heading level={4} className={styles.h4}>
+								Support
+							</Heading>
 							<ul>
 								<li>
-									<a href="#">Help center</a>
+									<Link small silver to="#">
+										Help center
+									</Link>
 								</li>
 								<li>
-									<a href="#">Terms of service</a>
+									<Link small silver to="#">
+										Terms of service
+									</Link>
 								</li>
 								<li>
-									<a href="#">Legal</a>
+									<Link small silver to="#">
+										Legal
+									</Link>
 								</li>
 								<li>
-									<a href="#">Privacy policy</a>
+									<Link small silver to="#">
+										Privacy policy
+									</Link>
 								</li>
 								<li>
-									<a href="#">Status</a>
+									<Link small silver to="#">
+										Status
+									</Link>
 								</li>
 							</ul>
 						</section>
 						<section>
-							<h4>Stay up to date</h4>
+							<Heading level={4} className={styles.h4}>
+								Stay up to date
+							</Heading>
 							<form
 								action="#"
 								onSubmit={(event) => {

@@ -1,21 +1,28 @@
 import React from "react";
 import styles from "./button.module.css";
 
-export default function Button({ children, style, type, onClick }) {
-	let className = null;
-
-	switch (type) {
-		case "primary":
-			className = styles.btnPrimary;
-			break;
-		case "secondary":
-			className = styles.btnSecondary;
-			break;
-		default:
-			className = null;
-	}
+export default function Button({
+	children,
+	style,
+	onClick,
+	className,
+	type,
+	small = null,
+	medium = null,
+	large = null,
+}) {
 	return (
-		<button className={className} style={style} onClick={onClick}>
+		<button
+			onClick={onClick}
+			style={style}
+			className={`
+				${className}
+				${type === "secondary" ? styles.btnSecondary : styles.btnPrimary}
+				${small && styles.small}
+				${medium && styles.medium}
+				${large && styles.large}
+		`}
+		>
 			{children}
 		</button>
 	);

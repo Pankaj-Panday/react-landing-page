@@ -1,30 +1,54 @@
 import React from "react";
 import Button from "../Button/Button";
+import Heading from "../Heading/Heading";
+import Paragraph from "../Paragraph/Paragraph";
 import styles from "./home.module.css";
 
 export default function Home() {
+	const imageSources = [
+		"images/clientLogo-1.svg",
+		"images/clientLogo-2.svg",
+		"images/clientLogo-3.svg",
+		"images/clientLogo-4.svg",
+		"images/clientLogo-5.svg",
+		"images/clientLogo-6.svg",
+		"images/clientLogo-7.svg",
+	];
+	const cardData = [
+		{
+			icon: "images/communityIcon-1.svg",
+			title: "Membership Organisations",
+			description:
+				"Our membership management software provides full automation of membership renewals and payments",
+		},
+		{
+			icon: "images/communityIcon-2.svg",
+			title: "National Associations",
+			description:
+				"Our membership management software provides full automation of membership renewals and payments",
+		},
+		{
+			icon: "images/communityIcon-3.svg",
+			title: "Clubs And Groups",
+			description:
+				"Our membership management software provides full automation of membership renewals and payments",
+		},
+	];
+
 	return (
 		<>
 			<section className={styles.intro}>
 				<div className="container flex">
 					<div>
-						<h1>
-							Lessons and insights <span>from 8 years</span>
-						</h1>
-						<p>
+						<Heading level={1} className={styles.h1}>
+							Lessons and insights{" "}
+							<span className={styles.primaryColorText}>from 8 years</span>
+						</Heading>
+						<Paragraph className={styles.p}>
 							Where to grow your business as a photographer: site or social
 							media?
-						</p>
-						<Button
-							style={{
-								fontSize: "16px",
-								padding: "14px 32px",
-								minWidth: "128px",
-								borderRadius: "4px",
-							}}
-							type="primary"
-							onClick={() => {}}
-						>
+						</Paragraph>
+						<Button medium onClick={() => {}}>
 							Register
 						</Button>
 					</div>
@@ -33,52 +57,41 @@ export default function Home() {
 			</section>
 			<section className={`${styles.clients}`}>
 				<div className="container">
-					<h2>Our Clients</h2>
-					<p>We have been working with some Fortune 500+ clients</p>
+					<Heading level={2} className={styles.h2}>
+						Our Clients
+					</Heading>
+					<Paragraph md className={styles.p}>
+						We have been working with some Fortune 500+ clients
+					</Paragraph>
 					<div className={`${styles.clientLogos} flex`}>
-						<img src="images/clientLogo-1.svg" alt="Logo 1" />
-						<img src="images/clientLogo-2.svg" alt="Logo 2" />
-						<img src="images/clientLogo-3.svg" alt="Logo 3" />
-						<img src="images/clientLogo-4.svg" alt="Logo 4" />
-						<img src="images/clientLogo-5.svg" alt="Logo 5" />
-						<img src="images/clientLogo-6.svg" alt="Logo 6" />
-						<img src="images/clientLogo-3.svg" alt="Logo 7" />
+						{imageSources.map((src, index) => {
+							return <img src={src} alt={`Logo ${index + 1}`} key={index} />;
+						})}
 					</div>
 				</div>
 			</section>
 			<section className={`${styles.community}`}>
 				<div className="container">
-					<h2>
+					<Heading level={2} className={styles.h2}>
 						Manage your entire community
 						<br />
 						in a single system
-					</h2>
-					<p>Who is Nextcent suitable for?</p>
+					</Heading>
+					<Paragraph md className={styles.p}>
+						Who is Nextcent suitable for?
+					</Paragraph>
 					<section className={`${styles.details} flex`}>
-						<div>
-							<img src="images/communityIcon-1.svg" alt="" />
-							<h3>Membership Organisations</h3>
-							<p>
-								Our membership management software provides full automation of
-								membership renewals and payments
-							</p>
-						</div>
-						<div>
-							<img src="images/communityIcon-2.svg" alt="" />
-							<h3>National Associations</h3>
-							<p>
-								Our membership management software provides full automation of
-								membership renewals and payments
-							</p>
-						</div>
-						<div>
-							<img src="images/communityIcon-3.svg" alt="" />
-							<h3>Membership Organisations</h3>
-							<p>
-								Our membership management software provides full automation of
-								membership renewals and payments
-							</p>
-						</div>
+						{cardData.map((card, index) => (
+							<div key={index}>
+								<img src={card.icon} alt="" />
+								<Heading level={3} className={styles.h3}>
+									{card.title}
+								</Heading>
+								<Paragraph sm style={{ marginTop: "8px" }}>
+									{card.description}
+								</Paragraph>
+							</div>
+						))}
 					</section>
 				</div>
 			</section>
