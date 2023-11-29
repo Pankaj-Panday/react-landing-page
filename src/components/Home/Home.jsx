@@ -44,7 +44,7 @@ export default function Home() {
 							Lessons and insights{" "}
 							<span className={styles.primaryColorText}>from 8 years</span>
 						</Heading>
-						<Paragraph className={styles.p}>
+						<Paragraph md className={styles.p}>
 							Where to grow your business as a photographer: site or social
 							media?
 						</Paragraph>
