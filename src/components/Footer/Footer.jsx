@@ -28,8 +28,14 @@ export default function Footer() {
 			<section className={`${styles.footer}`}>
 				<div className="container flex">
 					<div className={`${styles.companyInfo}`}>
-						<Link to="#">
-							<Logo className={`${styles.brandLogo}`} />
+						<Link
+							to="#"
+							style={{ display: "inline-block", marginBottom: "40px" }}
+						>
+							<Logo
+								className={`${styles.brandLogo}`}
+								style={{ width: "191px", height: "29px" }}
+							/>
 						</Link>
 						<Paragraph sm silver className={styles.p}>
 							Copyright © {new Date().getFullYear()} Nexcent ltd.
