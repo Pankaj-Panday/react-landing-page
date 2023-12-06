@@ -52,7 +52,7 @@ export default function Home() {
 							Register
 						</Button>
 					</div>
-					<img src="/images/introImage.svg" alt="Illustration" />
+					<img src="images/introImage.svg" alt="Illustration" />
 				</div>
 			</section>
 			<section className={`${styles.clients}`}>
