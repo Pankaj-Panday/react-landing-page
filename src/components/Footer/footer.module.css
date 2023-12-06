@@ -50,8 +50,8 @@
 }
 
 .footer .links {
-	width: 55%;
 	justify-content: space-between;
+	gap: 60px;
 }
 
 .footer .links .h4 {
@@ -66,6 +66,7 @@
 
 .footer .form {
 	position: relative;
+	width: 255px;
 }
 
 .footer .form input {
@@ -74,7 +75,7 @@
 	padding: 11px 12px;
 	min-height: 40px;
 	border: none;
-	width: 255px;
+	width: 100%;
 	color: var(--clr-neutral-silver);
 }
 
@@ -86,7 +87,6 @@
 	font-size: var(--fs-body-sm);
 	color: var(--clr-neutral-silver);
 	font-weight: var(--fw-regular);
-	line-height: 2rem;
 }
 
 .footer .form button {
@@ -102,4 +102,36 @@
 
 .footer .form button > img {
 	vertical-align: middle;
+}
+
+@media screen and (max-width: 950px) {
+	.demo .h2 {
+		font-size: 5.6rem;
+		line-height: 6.8rem;
+		width: 90%;
+	}
+	.footer .links {
+		gap: 30px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.footer > div {
+		flex-direction: column;
+		row-gap: 40px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.footer .links {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.demo .h2 {
+		font-size: 4.8rem;
+		line-height: 6rem;
+		width: 100%;
+	}
 }

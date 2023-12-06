@@ -73,7 +73,8 @@ export default function Body() {
 				<div className="container flex">
 					<div>
 						<Heading level={2} className={styles.h2}>
-							Helping a local{" "}
+							Helping a local
+							<br />
 							<span className={styles.primaryColorText}>
 								business reinvent itself
 							</span>
@@ -196,30 +197,13 @@ export default function Body() {
 
 function UpdateCard({ heading, imgUrl }) {
 	return (
-		<div
-			style={{
-				width: "368px",
-			}}
-		>
+		<div className={styles.updateCard}>
 			<div
 				style={{
-					width: "368px",
-					height: "286px",
 					backgroundImage: `url(${imgUrl})`,
-					borderRadius: "8px",
 				}}
 			></div>
-			<div
-				style={{
-					boxShadow: "0px 8px 16px 0px rgba(171, 190, 209, 0.40)",
-					backgroundColor: "var(--clr-neutral-silver)",
-					textAlign: "center",
-					borderRadius: "8px",
-					padding: "16px",
-					width: "86%",
-					margin: "-25% auto 0",
-				}}
-			>
+			<div>
 				<Heading
 					level={4}
 					style={{
@@ -238,36 +222,17 @@ function UpdateCard({ heading, imgUrl }) {
 }
 
 function StyledImgSection({ type = null, imgUrl, heading, paragraph }) {
-	const SectionStyle = {
-		padding: type === "1" ? "52px 0" : "0",
-		marginBottom: "48px",
-	};
-
-	const containerStyles = {
-		justifyContent: "center",
-		alignItems: "center",
-		gap: "49px",
-	};
-
-	const headingStyles = {
-		width: type === "1" ? "85%" : "90%",
-		color: "var(--clr-neutral-d-grey)",
-	};
-
-	const paragraphStyles = {
-		width: "85%",
-		marginTop: "16px",
-	};
-
 	return (
-		<section style={SectionStyle}>
-			<div className="container flex" style={containerStyles}>
+		<section
+			className={`${type === "1" ? styles.imgSection1 : styles.imgSection2}`}
+		>
+			<div className={`container flex ${styles.container}`}>
 				<img src={imgUrl} alt="Illustration" />
 				<div>
-					<Heading level={2} style={headingStyles}>
+					<Heading level={2} className={styles.heading}>
 						{heading}
 					</Heading>
-					<Paragraph sm style={paragraphStyles}>
+					<Paragraph sm className={styles.paragraph}>
 						{paragraph}
 					</Paragraph>
 					<Button type="primary" large style={{ marginTop: "32px" }}>
@@ -286,6 +251,7 @@ function Counter({ imgUrl, count, description, className }) {
 			style={{
 				gap: "16px",
 				alignItems: "center",
+				minWidth: "205px",
 			}}
 		>
 			<img src={imgUrl} alt="illustration" />

@@ -45,6 +45,14 @@
 	padding: 14px 32px;
 }
 
+@media screen and (max-width: 950px) {
+	.medium,
+	.large {
+		font-size: 15px;
+		padding: 12px 28px;
+	}
+}
+
 .medium {
 	min-width: 128px;
 }

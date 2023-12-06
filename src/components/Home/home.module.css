@@ -8,11 +8,14 @@
 	height: 100%;
 	justify-content: space-between;
 	align-items: center;
-	gap: 104px;
+}
+
+.intro > div > div {
+	width: 57%;
 }
 
 .intro img {
-	max-height: 407px;
+	width: 33%;
 }
 
 .intro .h1 {
@@ -55,15 +58,68 @@
 	margin-top: 16px;
 	padding: 10px 0;
 	justify-content: space-between;
-	gap: 127px;
 }
 
 .community .details div {
 	text-align: center;
 	padding: 24px 32px;
+	width: 26%;
+	min-width: 266px;
 }
 
 .community .details .h3 {
 	color: var(--clr-neutral-d-grey);
 	margin-top: 16px;
+}
+
+@media screen and (max-width: 900px) {
+	.intro > div > div {
+		width: 50%;
+	}
+	.intro img {
+		width: 40%;
+	}
+	.community .details {
+		flex-direction: column;
+		align-items: center;
+	}
+	.community .details div {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.intro {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.intro {
+		height: auto;
+	}
+	.intro > div {
+		flex-direction: column;
+	}
+	.intro > div > div {
+		width: 100%;
+		text-align: center;
+		margin: 5rem 0;
+	}
+	.intro img {
+		width: 50%;
+		margin-bottom: 5rem;
+	}
+	.clients .clientLogos {
+		flex-wrap: wrap;
+		column-gap: 50px;
+		row-gap: 30px;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.intro img {
+		width: 60%;
+	}
 }
