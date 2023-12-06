@@ -30,6 +30,7 @@ button {
 	width: 80%;
 	max-width: 1152px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .flex {

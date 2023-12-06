@@ -44,9 +44,10 @@
 	/* complet mobile navbar */
 
 	.navbar {
-		position: absolute;
-		right: -100%;
-		top: 100%;
+		position: fixed;
+		right: 0;
+		top: var(--header-height);
+		transform: translateX(100%);
 		background-color: var(--clr-neutral-silver);
 		flex-direction: column;
 		align-items: stretch;
@@ -55,10 +56,10 @@
 		padding: 0 20px 20px 20px;
 		gap: 30px;
 		justify-content: flex-start;
-		transition: right 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 	.navbar.show {
-		right: 0;
+		transform: translateX(0);
 	}
 	.navList {
 		flex-direction: column;
